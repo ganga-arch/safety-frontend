@@ -1,32 +1,42 @@
 .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; /* remove the gap so it doesn't close */
+  display: block;
+  margin-top: 0; /* remove the gap so it doesn't close */
 }
 
 .dropdown .dropdown-menu {
-    transition: color 0.5s linear; /* vendorless fallback */
-    -o-transition: color 0.5s linear; /* opera */
-    -ms-transition: color 0.5s linear; /* IE 10 */
-    -moz-transition: color 0.5s linear; /* Firefox */
-    -webkit-transition: color 0.5s linear; /*safari and chrome */
+  transition: color 0.5s linear; /* vendorless fallback */
+  -o-transition: color 0.5s linear; /* opera */
+  -ms-transition: color 0.5s linear; /* IE 10 */
+  -moz-transition: color 0.5s linear; /* Firefox */
+  -webkit-transition: color 0.5s linear; /*safari and chrome */
 }
 
 .red {
-    color: red;
-    background-color: black;
-    overflow: hidden;
-    transition-duration: 0.8s;
-    transition-property: transform;
+  color: whitesmoke;
+  background-color: black;
+  overflow: hidden;
+  transition-duration: 0.8s;
+  transition-property: transform;
+  border: 1px solid #ffff;
 }
 
 .blue {
-    color: gold;
-
-    transform: rotate(360deg);
-    transition-duration: 0.8s;
-    -webkit-transform: rotate(360deg);
+  color: gold;
+  transform: rotate(360deg);
+  background: white;
+  transition-duration: 0.8s;
+  -webkit-transform: rotate(360deg);
+  border: 2px dotted rgb(223, 190, 236);
 }
 
 .lh-1 {
-    line-height: 1.5;
+  line-height: 1.5;
+}
+
+.reg-button:hover {
+  font-size: 14px;
+}
+
+.reg-button {
+  background: #007bff;
 }

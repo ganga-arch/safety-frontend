@@ -16,6 +16,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { FloatingIconsComponent } from './components/floating-icons/floating-icons.component';
+import {MatTableModule} from '@angular/material/table';
+import { ApplicantsListComponent } from './components/applicants-list/applicants-list.component';
+
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -27,6 +31,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     FooterComponent,
     HomeComponent,
     HeaderComponent,
+    FloatingIconsComponent,
+    ApplicantsListComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +44,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     MatButtonModule,
     MatSelectModule,
     MatFormFieldModule,
+    MatTableModule,
     // ngx-translate and the loader module
     HttpClientModule,
     TranslateModule.forRoot({
